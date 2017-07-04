@@ -1,4 +1,6 @@
 <h1>Doctors</h1>
 <%@doctors.each do |doctor| %>
   <p><%=link_to doctor.name, doctor_path(doctor.id)%></p>
-  <%end%>
+  <hr>
+   <%end%>
+<%=link_to "[New Doctor]", new_doctor_path %>

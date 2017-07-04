@@ -15,4 +15,13 @@ module Patient
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
   end
+
+end
+module Codaisseurbnb
+  class Application < Rails::Application
+    # add the next 3 lines
+    console do
+      ActiveRecord::Base.connection
+    end
+  end
 end

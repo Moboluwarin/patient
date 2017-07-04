@@ -3,7 +3,5 @@ class Doctor < ApplicationRecord
   #  order(:name)
   scope :order_by_name, ->{order(:name)}
 
-  def is_teenager?
-    age < 20
-  end
+  
 end

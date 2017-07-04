@@ -17,7 +17,7 @@ class DoctorsController < ApplicationController
     if @doctor.save
       redirect_to@doctor
     else
-      render "new"
+      render 'new'
     end
   end
 end
